@@ -1,0 +1,676 @@
+/* glob */
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: "OpenSans";
+    src: local("OpenSans-Bold"),
+        url("../fonts/OpenSans-Bold.woff2") format("off2"),
+        url("../fonts/OpenSans-Bold.woff") format("woff");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "OpenSans";
+    src: local("OpenSans-SemiBold"),
+        url("../fonts/OpenSans-SemiBold.woff2") format("woff2"),
+        url("../fonts/OpenSans-SemiBold.woff") format("woff");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "OpenSans";
+    src: local("OpenSans-Regular"),
+        url("../fonts/OpenSans-Regular.woff2") format("woff2"),
+        url("../fonts/OpenSans-Regular.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+.table__body {
+    min-width: 320px;
+    font-family: "OpenSans", sans-serif;
+    font-weight: 400;
+    background-color: white;
+}
+
+/* :root {
+
+} */
+
+.list-reset {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.btn-reset {
+    padding: 0;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+
+
+/* Header */
+.header {
+    box-shadow: 0px 6px 15px 2px rgb(51 51 51 / 30%);
+    position: relative;
+    z-index: 1000;
+}
+
+
+.header__container {
+    max-width: 1366px;
+    margin: 0 auto;
+    padding: 0 20px;
+
+}
+
+.header__wrapper {
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.hader__logo {
+    margin-right: 53px;
+}
+
+.header__search {
+    width: 581px;
+    /* height: ; */
+    padding: 8px 16px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    border: 1px solid rgba(51, 51, 51, 0.2);
+}
+
+.header__search:focus-visible {
+    outline: 1.5px solid rgba(30, 30, 30, 0.2);
+}
+
+
+.header__search::placeholder {
+    color: #B0B0B0;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+}
+
+
+
+/* Main */
+.main {
+    background-color: #F5F5F5;
+    padding: 40px 0;
+}
+
+
+.main__container {
+    max-width: 1216px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.main__title {
+    margin: 0;
+    margin-bottom: 30px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+    align-items: center;
+    color: #333333;
+}
+
+
+/* table */
+
+.main__table {
+    margin-bottom: 40px;
+}
+
+.head__text {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    align-items: center;
+    color: #B0B0B0;
+
+}
+
+.head__text-alph {
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 14px;
+    color: #9873FF;
+}
+
+.head__data:hover {
+    cursor: pointer;
+}
+
+.head__data:hover .head__text {
+    color: #333333;
+}
+
+.head__data:hover .head__text-alph {
+    color: #333333;
+}
+
+.head__data:active .head__text {
+    color: #9873FF;
+}
+
+.head__data:active .head__text-alph {
+    color: #9873FF;
+}
+
+.head__arrow-rotate {
+    transform: rotate(180deg);
+    transition: transform .2 ease-in-out;
+}
+
+
+
+
+
+/* add client */
+
+.addClient {
+    display: block;
+    border: 1px solid #9873FF;
+    padding: 14px 26.5px;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.addClient__text {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+    color: #9873FF;
+}
+
+.addClient:hover {
+    background-color: #8052FF;
+}
+
+.addClient:hover .addClient__text {
+    color: white;
+}
+
+.addClient:hover path {
+    fill: white;
+}
+
+.addClient:active {
+    background-color: #B89EFF;
+}
+
+.addClient:active .addClient__text {
+    color: white;
+}
+
+.addClient:active path {
+    fill: white;
+}
+
+
+/* Модальное окно изменения */
+.modal-id {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #B0B0B0;
+    margin-left: 9px;
+}
+
+
+
+
+
+
+/* Модальное окно удаления */
+.modal-text {
+    width: 275px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    color: #333333;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 25px;
+}
+
+h5 {
+    margin: 0;
+}
+
+.modal-delete-header {
+    padding-bottom: 11px;
+}
+
+.modal-delete-title {
+    text-align: center;
+}
+
+.modal-container {
+    width: 275px;
+    margin: 0 auto;
+}
+
+.modal-footer-delete {
+    flex-direction: column;
+}
+
+.btn-delete {
+    outline: none;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 5px;
+    padding: 12.5px 35px;
+    background-color: #9873FF;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.btn-delete:hover {
+    background-color: #B89EFF;
+}
+
+.btn-delete:active {
+    background-color: #8052FF;
+
+}
+
+.btn-delete:focus {
+    background-color: #C8C5D1;
+}
+
+.btn-delete {}
+
+
+
+/* Модальное окно "добавить клиента" */
+
+.modal-header {
+    position: relative;
+    border: none;
+    display: block;
+    padding: 24px 30px;
+
+
+}
+
+.modal-title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    color: #333333;
+
+
+}
+
+.btn-close {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+}
+
+.modal__form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form__input:not(:last-child) {
+    margin-bottom: 32px;
+}
+
+.form__input:last-child {
+    margin-bottom: 25px;
+}
+
+
+.form__input::placeholder {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    color: #B0B0B0;
+}
+
+input {
+    border: none;
+    border-bottom: 1px solid #C8C5D1;
+    opacity: 0.5;
+}
+
+.form__input:focus-visible {
+    /* outline: none; */
+}
+
+.modal-body {
+    padding: 0;
+}
+
+.contacts-conatiner {
+    background-color: rgb(200 197 209 / 30%);
+    padding: 20px 30px;
+    margin-bottom: 25px;
+}
+
+.contacts-conatiner-validate {
+    margin: 0;
+}
+
+.btn-addContact {
+    outline: none;
+    width: 100%;
+    /* padding: 10px 0; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-addContact__text {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    color: #333333;
+}
+
+.input-wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 0 30px;
+}
+
+.btn-addContact__icon {
+    margin-right: 5px;
+}
+
+
+
+
+
+/* Добавленная строка контактов */
+
+.contact-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contact-wrapper:not(:last-child) {
+    margin-bottom: 15px;
+}
+
+
+.form-select {
+    display: inline-block;
+    width: 123px;
+    padding: 10px 8px 10px 12px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #333333;
+    border: none;
+    border-radius: 0;
+    border: 1px solid #C8C5D1;
+    background-color: #E7E5EB;
+    background-image: url(../img/arrow-down.svg);
+    background-position: right 8px center;
+    background-size: 10px;
+    outline: none;
+}
+
+.form-select:focus {
+    outline: none;
+    box-shadow: none
+}
+
+.contact__option {
+    background-color: #F4F3F6;
+    ;
+}
+
+.contact__btn-cancel {
+    padding: 18px 13px;
+    border: 1px solid #C8C5D1;
+    background-color: #E7E5EB;
+    background-image: url(../img/cancel-contact-grey.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+
+.contact__btn-cancel:hover {
+    padding: 18px 13px;
+    cursor: pointer;
+    border: 1px solid #F06A4D;
+    background-color: #E7E5EB;
+    background-image: url(../img/cancel-contact-red.svg);
+}
+
+
+
+.contact__input {
+    flex-grow: 1;
+    padding: 6px 0 6px 12px;
+    border-top: 1px solid #C8C5D1;
+    border-bottom: 1px solid #C8C5D1;
+    outline: none;
+    font-weight: 600;
+    color: #333333;
+    opacity: 1;
+}
+
+.contact__input::placeholder {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    color: #B0B0B0;
+}
+
+.contact__input-validate {
+    border-bottom: 1px solid #F06A4D;
+}
+
+
+.error {
+    margin: 9px auto 9px;
+    width: 255px;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 14px;
+    text-align: center;
+    color: #F06A4D;
+}
+
+
+
+
+.btn-save {
+    outline: none;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 5px;
+    padding: 12.5px 35px;
+    background-color: #9873FF;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.btn-save:hover {
+    background-color: #B89EFF;
+}
+
+.btn-save:active {
+    background-color: #8052FF;
+
+}
+
+.btn-save:focus {
+    background-color: #C8C5D1;
+}
+
+.btn-cancel {
+    outline: none;
+    display: block;
+    margin: 0 auto;
+    /* margin-bottom: 25px; */
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    text-decoration-line: underline;
+    color: #333333;
+}
+
+.modal-footer {
+    padding: 0;
+    padding-bottom: 25px;
+    border: 0;
+}
+
+
+
+/* Стили строки клиента */
+
+.body__contact-wrapper:not(:last-child) {
+    margin-right: 7px;
+}
+
+.body__contact {
+    display: inline-block;
+    vertical-align: middle;
+    width: 16px;
+    height: 16px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    /* background-size: contain; */
+}
+
+.body__contact-other {
+    background-image: url(../img/other.svg);
+}
+
+.body__contact-phone {
+    background-image: url(../img/phone.svg);
+}
+
+.body__contact-email {
+    background-image: url(../img/mail.svg);
+}
+
+.body__contact-vk {
+    background-image: url(../img/vk.svg);
+}
+
+.body__contact-fb {
+    background-image: url(../img/fb.svg);
+}
+
+
+.body__data-style {
+    vertical-align: middle;
+
+}
+
+.body__data-id {
+    vertical-align: middle;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #B0B0B0;
+}
+
+.body__data-grey {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    color: #B0B0B0;
+}
+
+.body__date {
+    display: inline-block;
+    margin-right: 7px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    color: #333333;
+}
+
+.body__change {
+    padding-left: 16px;
+    background-image: url(../img/change-pen.svg);
+    background-repeat: no-repeat;
+    background-position: center left;
+
+}
+
+.body__delete {
+    padding-left: 16px;
+    background-image: url(../img/delete-X.svg);
+    background-repeat: no-repeat;
+    background-position: center left;
+}
+
+.btn:disabled {
+    opacity: 1;
+}
+
+.table>:not(:first-child) {
+    border-top: inherit;
+}
+
+.body__btn:not(:last-child) {
+    margin-right: 30px;
+}
+
+
+
+/* Полупрозрачный фон при отправке формы */
+
+#overlay {
+    position: fixed; /* Sit on top of the page content */
+    display: none; /* Hidden by default */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+    z-index: 2000; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer; /* Add a pointer on hover */
+  }
